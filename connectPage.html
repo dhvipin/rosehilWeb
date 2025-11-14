@@ -10,7 +10,7 @@
         content="CONNECT system, innovative rail crossing, dimensional stability, heavy traffic crossing, acute-angle crossings, 100% recycled materials, Indovia CONNECT, modular connection system, stable rail crossing, sustainable rail solution">
     <title>CONNECT System - Heavy Traffic Rail Crossing Solution | Indovia</title>
     <link rel="canonical" href="https://rail.rosehill.group/connect.html">
-
+    <link rel="stylesheet" href="style.css">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="CONNECT System - Heavy Traffic Rail Crossing Solution | Indovia">
     <meta property="og:description"
@@ -119,295 +119,6 @@
     /* Secondary color (white) */
 }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        /* Header */
-        .header {
-             background-color: var(--PrimaryColor);
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .header-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 600;
-            font-family: 'Source Sans Pro', sans-serif;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            padding: 8px 16px;
-            border-radius: 6px;
-        }
-
-        .nav-menu a:hover {
-            background: rgba(255, 107, 53, 0.2);
-            color: #ff6b35;
-        }
-
-        .nav-menu a.active {
-            background: rgba(255, 107, 53, 0.2);
-            color: #ff6b35;
-            font-weight: 600;
-        }
-
-        .contact-btn {
-            background: #ff6b35;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-left: 10px;
-        }
-
-        .contact-btn:hover {
-            background: #e55a2b !important;
-            transform: translateY(-2px);
-        }
-
-        /* Mobile Menu Toggle */
-        .mobile-menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 4px;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .mobile-menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-nav-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: #1a365d;
-            flex-direction: column;
-            padding: 20px;
-            gap: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .mobile-nav-menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-nav-menu a:hover {
-            background: rgba(255, 107, 53, 0.2);
-            color: #ff6b35;
-        }
-
-        .mobile-nav-menu a.active {
-            color: #ff6b35;
-            font-weight: 600;
-        }
-
-        .mobile-nav-menu a:last-child {
-            border-bottom: none;
-        }
-
-        .mobile-nav-menu .contact-btn {
-            background: #ff6b35;
-            padding: 15px 20px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 10px;
-            border-bottom: none;
-        }
-
-        /* Mobile Dropdown Styles */
-        .mobile-dropdown {
-            width: 100%;
-        }
-
-        .mobile-dropdown-toggle {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .dropdown-arrow {
-            font-size: 0.8em;
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-dropdown.active .dropdown-arrow {
-            transform: rotate(180deg);
-        }
-
-        .mobile-dropdown-content {
-            display: none;
-            background: rgba(0, 0, 0, 0.1);
-            margin: 10px 0;
-            border-radius: 8px;
-            padding: 10px 0;
-        }
-
-        .mobile-dropdown.active .mobile-dropdown-content {
-            display: block;
-        }
-
-        .mobile-dropdown-content a {
-            display: block;
-            padding: 10px 20px !important;
-            font-size: 0.9em;
-            border-bottom: none !important;
-        }
-
-        .mobile-dropdown-content a:hover {
-            background: rgba(255, 107, 53, 0.1);
-        }
-
-        /* Mega Menu */
-        .nav-item {
-            position: relative;
-        }
-
-        .mega-menu {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-            padding: 30px;
-            width: 320px;
-            max-height: calc(100vh - 100px);
-            overflow-y: auto;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            margin-top: 10px;
-        }
-
-        /* Custom scrollbar styling for mega menu */
-        .mega-menu::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .mega-menu::-webkit-scrollbar-track {
-            background: #f0f4f8;
-            border-radius: 10px;
-        }
-
-        .mega-menu::-webkit-scrollbar-thumb {
-            background: #cbd5e0;
-            border-radius: 10px;
-        }
-
-        .mega-menu::-webkit-scrollbar-thumb:hover {
-            background: #a0aec0;
-        }
-
-        .nav-item:hover .mega-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(-50%) translateY(0);
-        }
-
-        .mega-menu-content {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .mega-menu-section h4 {
-            font-family: 'Overpass', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #1a365d;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #f0f4f8;
-        }
-
-        .mega-menu-links {
-            list-style: none;
-        }
-
-        .mega-menu-links li {
-            margin-bottom: 6px;
-        }
-
-        .mega-menu-links a {
-            color: #666;
-            text-decoration: none;
-            padding: 8px 12px;
-            display: block;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            border-radius: 6px;
-        }
-
-        .mega-menu-links a:hover {
-            color: #ff6b35;
-            background: #fff5f2;
-            transform: translateX(4px);
-        }
-
-        .mega-menu::before {
-            content: '';
-            position: absolute;
-            top: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 8px solid white;
-        }
-
         /* Product Hero */
         .product-hero {
             position: relative;
@@ -440,7 +151,7 @@
             right: 0;
             bottom: 0;
             z-index: 2;
-            background: linear-gradient(135deg, #1a365d 0%, #2d4a71 100%);
+            background:var(--primaryColor);
             mix-blend-mode: color;
             opacity: 1;
         }
@@ -467,10 +178,7 @@
             }
 
             .hero-overlay {
-                background: linear-gradient(135deg,
-                        rgba(26, 54, 93, 0.7) 0%,
-                        rgba(45, 74, 113, 0.6) 100%);
-                mix-blend-mode: normal;
+                background-color: var(--primaryColor);
             }
         }
 
@@ -502,7 +210,7 @@
 
         .badge {
             display: inline-block;
-            background: #ff6b35;
+            background:var(--primaryColor);
             color: white;
             padding: 8px 20px;
             border-radius: 25px;
@@ -524,7 +232,7 @@
         }
 
         .hero-features .check {
-            background: #ff6b35;
+            background: var(--primaryColor);
             color: white;
             width: 24px;
             height: 24px;
@@ -574,7 +282,7 @@
         }
 
         .benefit-card {
-            background: #f8f9fa;
+            background: #f7baba;
             padding: 40px 30px;
             border-radius: 12px;
             text-align: center;
@@ -590,7 +298,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: #ff6b35;
+            background:var(--primaryColor);
             transform: translateX(-100%);
             transition: transform 0.3s ease;
         }
@@ -607,7 +315,7 @@
         .benefit-icon {
             width: 80px;
             height: 80px;
-            background: #1a365d;
+            background:var(--primaryColor);
             border-radius: 16px;
             display: flex;
             align-items: center;
@@ -670,7 +378,7 @@
         }
 
         .specs-table th {
-            background: #1a365d;
+            background: var(--primaryColor);
             color: white;
             padding: 20px;
             text-align: left;
@@ -741,7 +449,7 @@
         /* Applications Section */
         .applications-section {
             padding: 80px 0;
-            background: #1a365d;
+            background:var(--primaryColor);
             color: white;
         }
 
@@ -820,7 +528,7 @@
         }
 
         .btn-primary {
-            background: #ff6b35;
+            background: var(--primaryColor);
             color: white;
             padding: 16px 32px;
             border-radius: 8px;
@@ -831,13 +539,13 @@
         }
 
         .btn-primary:hover {
-            background: #e55a2b;
+            background: var(--secondaryColor);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
         }
 
         .btn-secondary {
-            background: rgba(26, 54, 93, 0.1);
+            background: var(--primaryColor);
             color: #1a365d;
             padding: 16px 32px;
             border-radius: 8px;
@@ -856,7 +564,7 @@
 
         /* Footer */
         .footer {
-            background: #1a365d;
+            background: var(--primaryColor);
             color: white;
             padding: 60px 0 30px;
         }
@@ -872,7 +580,7 @@
             font-family: 'Overpass', sans-serif;
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #ff6b35;
+            color: var(--secondaryColor);
         }
 
         .footer-section p,
@@ -1213,8 +921,7 @@
             <div class="hero-text">
                 <div class="badge" data-i18n="products.connectSystem.badge">HEAVY TRAFFIC SOLUTION</div>
                 <h1 data-i18n="products.connectSystem.name">CONNECT System</h1>
-                <p class="subtitle" data-i18n="products.connectSystem.description">Innovative dimensional stability
-                    solution designed for heavy traffic and acute-angle crossings.</p>
+                <p class="subtitle" data-i18n="products.connectSystem.description">Expert-led training from Indovia Rail is essential to keep projects running on time and within budget. Fill out the contact form above, and our team will respond within one working day to discuss your needs, available schedules, and how we can support your operations across India and beyond.</p>
                 <ul class="hero-features">
                     <li><span class="check">✓</span><span data-i18n="connectPage.hero.feature1">Ideal for very long
                             crossings</span></li>
@@ -1254,8 +961,7 @@
                     </div>
                     <h3 class="benefit-title" data-i18n="connectPage.benefits.integratedMatrix.title">Integrated Matrix
                         Design</h3>
-                    <p class="benefit-desc" data-i18n="connectPage.benefits.integratedMatrix.desc">Unified system with
-                        simple bolt connections ensures stability and prevents panel displacement under heavy loads.</p>
+                    <p class="benefit-desc" data-i18n="connectPage.benefits.integratedMatrix.desc">A unified system with streamlined bolt connections delivers exceptional stability, ensuring every panel remains securely in place even under the heaviest operational loads.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
@@ -1440,55 +1146,41 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Cherry%20Willingham.avif" type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Cherry%20Willingham.webp" type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Cherry Willingham.jpg"
+                       
+                        <img src="imgs/connect_home.png"
                             alt="CONNECT System at Cherry Willingham">
                     </picture>
                 </div>
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Czech%20Republic.avif" type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Czech%20Republic.webp" type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Czech Republic.jpg"
+                       
+                        <img src="imgs/connect_home.png"
                             alt="CONNECT System in Czech Republic">
                     </picture>
                 </div>
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Gdansk%20Installation.avif"
-                            type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Gdansk%20Installation.webp"
-                            type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Gdansk Installation.jpg"
+                        
+                        <img src="imgs/connect_home.png"
                             alt="CONNECT System in Gdansk">
                     </picture>
                 </div>
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Poland.avif" type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Poland.webp" type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Poland.jpg" alt="CONNECT System in Poland">
+                       <img src="imgs/connect_home.png"
+                            alt="CONNECT System in Gdansk">
                     </picture>
                 </div>
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Snaith%20Installation.avif"
-                            type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Snaith%20Installation.webp"
-                            type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Snaith Installation.jpg"
-                            alt="CONNECT System at Snaith">
+                       <img src="imgs/connect_home.png"
+                            alt="CONNECT System in Gdansk">
                     </picture>
                 </div>
                 <div class="gallery-item">
                     <picture>
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Plumstead%20Sidings%202019.avif"
-                            type="image/avif">
-                        <source srcset="Connect%20Images/Rodded%20Crossing_Plumstead%20Sidings%202019.webp"
-                            type="image/webp">
-                        <img src="Connect Images/Rodded Crossing_Plumstead Sidings 2019.jpg"
-                            alt="CONNECT System at Plumstead Sidings">
+                       <img src="imgs/connect_home.png"
+                            alt="CONNECT System in Gdansk">
                     </picture>
                 </div>
             </div>

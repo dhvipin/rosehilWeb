@@ -58,11 +58,11 @@
 
     <style>
         :root {
-    --primaryColor: #D32C2C;
-    /* Main brand color (red tone) */
-    --secondaryColor: #FFFFFF;
-    /* Secondary color (white) */
-}
+            --primaryColor: #D32C2C;
+            /* Main brand color (red tone) */
+            --secondaryColor: #FFFFFF;
+            /* Secondary color (white) */
+        }
 
         * {
             margin: 0;
@@ -74,12 +74,12 @@
             font-family: 'Source Sans Pro', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background-color: var(--primaryColor);
         }
 
         /* Header */
         .header {
-             background-color: var(--PrimaryColor);
+            background-color: var(--PrimaryColor);
             padding: 15px 0;
             position: fixed;
             width: 100%;
@@ -124,18 +124,18 @@
         }
 
         .nav-menu a:hover {
-            background: rgba(255, 107, 53, 0.2);
+            background: var(--primaryColor);
             color: #ff6b35;
         }
 
         .nav-menu a.active {
-            background: rgba(255, 107, 53, 0.2);
-            color: #ff6b35;
+            background: var(--primaryColor);
+            color: ;
             font-weight: 600;
         }
 
         .contact-btn {
-            background: #ff6b35;
+            background: var(--primaryColor);
             padding: 12px 24px;
             border-radius: 8px;
             font-weight: 600;
@@ -143,7 +143,7 @@
         }
 
         .contact-btn:hover {
-            background: #e55a2b !important;
+            background: #dd1f12 !important;
             transform: translateY(-2px);
         }
 
@@ -170,7 +170,7 @@
             top: 100%;
             left: 0;
             right: 0;
-            background: #1a365d;
+            background: var(--primaryColor);
             flex-direction: column;
             padding: 20px;
             gap: 15px;
@@ -185,12 +185,12 @@
         }
 
         .mobile-nav-menu a:hover {
-            background: rgba(255, 107, 53, 0.2);
+            background: var(--primaryColor);
             color: #ff6b35;
         }
 
         .mobile-nav-menu a.active {
-            color: #ff6b35;
+            color: #47342d;
             font-weight: 600;
         }
 
@@ -199,7 +199,7 @@
         }
 
         .mobile-nav-menu .contact-btn {
-            background: #ff6b35;
+            background: var(--primaryColor);
             padding: 15px 20px;
             border-radius: 8px;
             text-align: center;
@@ -230,7 +230,7 @@
 
         .mobile-dropdown-content {
             display: none;
-            background: rgba(0, 0, 0, 0.1);
+            background: var(--primaryColor);
             margin: 10px 0;
             border-radius: 8px;
             padding: 10px 0;
@@ -248,7 +248,7 @@
         }
 
         .mobile-dropdown-content a:hover {
-            background: rgba(255, 107, 53, 0.1);
+            background: var(--primaryColor);
         }
 
         /* Mega Menu */
@@ -322,7 +322,7 @@
         .mega-menu-section .section-icon {
             width: 24px;
             height: 24px;
-            background: #ff6b35;
+            background: var(--primaryColor);
             border-radius: 4px;
             display: flex;
             align-items: center;
@@ -408,7 +408,7 @@
             right: 0;
             bottom: 0;
             z-index: 2;
-            background: linear-gradient(135deg, #1a365d 0%, #2d4a71 100%);
+            background: var(--primaryColor);
             mix-blend-mode: color;
             opacity: 1;
         }
@@ -524,7 +524,7 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: #ff6b35;
+            background: var(--primaryColor);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -605,7 +605,7 @@
         }
 
         .submit-btn {
-            background: #ff6b35;
+            background: var(--primaryColor);
             color: white;
             border: none;
             padding: 16px 32px;
@@ -618,7 +618,7 @@
         }
 
         .submit-btn:hover {
-            background: #e55a2b;
+            background: var(--primaryColor);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
         }
@@ -681,7 +681,7 @@
         .feature-icon {
             width: 30px;
             height: 30px;
-            background: #ff6b35;
+            background: var(--primaryColor);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -692,7 +692,7 @@
         }
 
         .training-cta {
-            background: #1a365d;
+            background: var(--primaryColor);
             color: white;
             padding: 30px;
             border-radius: 12px;
@@ -712,7 +712,7 @@
         }
 
         .cta-btn {
-            background: #ff6b35;
+            background: var(--primaryColor);
             color: white;
             text-decoration: none;
             padding: 12px 24px;
@@ -723,13 +723,13 @@
         }
 
         .cta-btn:hover {
-            background: #e55a2b;
+            background: #a50303;
             transform: translateY(-2px);
         }
 
         /* Footer */
         .footer {
-            background: #1a365d;
+            background: var(--primaryColor);
             color: white;
             padding: 60px 0 30px;
         }
@@ -745,7 +745,7 @@
             font-family: 'Overpass', sans-serif;
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #ff6b35;
+            color: #ffffff;
         }
 
         .footer-section p,
@@ -991,11 +991,11 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-          <picture>
-                 
-                   <a href="/"><img href="/" src="imgs/logo.png" alt="Indovia" width="150" height="30" loading="eager"></a> 
-                </picture>
-             <nav>
+            <picture>
+
+                <a href="/"><img href="/" src="imgs/logo.png" alt="Indovia" width="150" height="30" loading="eager"></a>
+            </picture>
+            <nav>
                 <ul class="nav-menu">
                     <li><a href="#" class="active" data-i18n="navigation.home">Home</a></li>
                     <li class="nav-item">
@@ -1006,7 +1006,7 @@
                                     <h4 data-i18n="navigation.crossingSystems">
                                         Crossing Systems
                                     </h4>
-                                        <ul class="mega-menu-links">
+                                    <ul class="mega-menu-links">
                                         <li><a data-i18n='navigation.connectSystem' href='/connectPage.html'>CONNECT
                                                 System</a>
                                         </li>
@@ -1051,7 +1051,8 @@
                         </div>
                     </li>
                     <li><a data-i18n='navigation.aboutUs' href='/about.html'>About Us</a></li>
-                    <li><a class='contact-btn' data-i18n='navigation.getInTouch' href='/contactPage.html'>Get in Touch</a></li>
+                    <li><a class='contact-btn' data-i18n='navigation.getInTouch' href='/contactPage.html'>Get in
+                            Touch</a></li>
                     <li class="language-switcher-desktop">
                         <a href="#" class="language-dropdown-toggle" id="lang-toggle">
                             EN <span class="dropdown-arrow">▼</span>
@@ -1135,11 +1136,8 @@
                         </div>
                         <div class="contact-details">
                             <h4 data-i18n="contact.ourLocation">Our Location</h4>
-                            <p>Beech Road<br>
-                                Sowerby Bridge<br>
-                                West Yorkshire<br>
-                                HX6 2JT<br>
-                                United Kingdom</p>
+                            <p>32A, Ground Floor, JD- Block, Pitampura, New Delhi- 110034
+                            </p>
                         </div>
                     </div>
 
@@ -1155,9 +1153,9 @@
                         </div>
                         <div class="contact-details">
                             <h4 data-i18n="contact.phone">Phone</h4>
-                            <p><a href="tel:+441422839456" class="gtm-phone-click" data-event="phone_click"
+                            <p><a href="tel: 8920643256" class="gtm-phone-click" data-event="phone_click"
                                     data-category="contact" data-label="phone"
-                                    style="color: #1a365d; text-decoration: none;">+44 (0)1422 839 456</a></p>
+                                    style="color: #1a365d; text-decoration: none;"> 8920643256</a></p>
                         </div>
                     </div>
 
@@ -1188,7 +1186,7 @@
                             <h4 data-i18n="contact.email">Email</h4>
                             <p><a href="mailto:info@rosehillrail.com" class="gtm-email-click" data-event="email_click"
                                     data-category="contact" data-label="email"
-                                    style="color: #1a365d; text-decoration: none;">info@rosehillrail.com</a></p>
+                                    style="color: #1a365d; text-decoration: none;">info@Indovia.com</a></p>
                         </div>
                     </div>
 
@@ -1372,9 +1370,7 @@
 
                     <div class="training-cta">
                         <h4 data-i18n="contact.training.onTimeOnBudget">On Time & On Budget</h4>
-                        <p data-i18n="contact.training.expertTrainingValue">Expert training is invaluable for ensuring
-                            projects run on time and on budget. Fill out the contact form above and we'll get back to
-                            you within one working day to discuss your requirements and available dates.</p>
+                        <p data-i18n="contact.training.expertTrainingValue">Expert-led training from Indovia Rail is essential to keep projects running on time and within budget. Fill out the contact form above, and our team will respond within one working day to discuss your needs, available schedules, and how we can support your operations across India and beyond..</p>
                         <a href="#contact-form" class="cta-btn" data-i18n="contact.training.bookTrainingCourse">Book
                             Training Course</a>
                     </div>
@@ -1391,7 +1387,7 @@
                     <h3 data-i18n="footer.contactUs">Contact Us</h3>
                     <p><strong>Indovia</strong><br>
                         <span data-i18n="contact.address.division">A Division of</span> <a
-                            href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill
+                            href="https://rosehill.group/" style="color: #9b9b9b; text-decoration: underline;">Rosehill
                             Group</a><br>
                         Beech Road<br>
                         Sowerby Bridge<br>
@@ -1469,7 +1465,7 @@
 
             <div class="footer-bottom">
                 <p data-i18n="footer.copyright">© 2025 Indovia. A Division of <a href="https://rosehill.group/"
-                        style="color: #ff6b35; text-decoration: underline;">Rosehill Group</a>. All rights reserved.</p>
+                        style="color: #000000; text-decoration: underline;">Indovia</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
