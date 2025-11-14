@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 "@type": "Organization",
                 "@id": "https://rail.rosehill.group/#organization",
-                "name": "Rosehill Rail",
+                "name": "Indovia",
                 "url": "https://rail.rosehill.group/",
                 "logo": {
                     "@type": "ImageObject",
@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "@type": "WebSite",
                 "@id": "https://rail.rosehill.group/#website",
                 "url": "https://rail.rosehill.group/",
-                "name": "Rosehill Rail",
+                "name": "Indovia",
                 "description": "Leading UK manufacturer of innovative rail crossing solutions",
                 "publisher": {
                     "@id": "https://rail.rosehill.group/#organization"
