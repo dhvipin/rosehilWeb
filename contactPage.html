@@ -57,6 +57,13 @@
     <!-- End Google Tag Manager -->
 
     <style>
+        :root {
+    --primaryColor: #D32C2C;
+    /* Main brand color (red tone) */
+    --secondaryColor: #FFFFFF;
+    /* Secondary color (white) */
+}
+
         * {
             margin: 0;
             padding: 0;
@@ -72,7 +79,7 @@
 
         /* Header */
         .header {
-            background: linear-gradient(135deg, #1a365d, #2d4a71);
+             background-color: var(--PrimaryColor);
             padding: 15px 0;
             position: fixed;
             width: 100%;
@@ -984,13 +991,10 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <a class='logo' href='/'>
-                <picture>
-                    <source srcset="rosehill_rail_logo.avif" type="image/avif">
-                    <source srcset="rosehill_rail_logo.webp" type="image/webp">
-                    <img src="rosehill_rail_logo.png" alt="Indovia" style="height: 60px;">
+          <picture>
+                 
+                   <a href="/"><img href="/" src="imgs/logo.png" alt="Indovia" width="150" height="30" loading="eager"></a> 
                 </picture>
-            </a>
              <nav>
                 <ul class="nav-menu">
                     <li><a href="#" class="active" data-i18n="navigation.home">Home</a></li>
