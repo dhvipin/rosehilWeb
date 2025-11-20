@@ -1029,73 +1029,6 @@ input:checked+.cookie-slider:before {
     border-bottom: 8px solid white;
 }
 
-/* Mobile Menu */
-.mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 8px;
-    background: none;
-    border: none;
-    z-index: 1001;
-}
-
-.mobile-menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
-}
-
-.mobile-menu-toggle.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.mobile-nav-menu {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: var(--primaryColor);
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-}
-
-.mobile-nav-menu.active {
-    display: flex;
-}
-
-.mobile-nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: color 0.3s ease;
-}
-
-.mobile-nav-menu a:hover {
-    color: var(--primaryColor);
-}
-
-.mobile-nav-menu a.active {
-    color: var(--primaryColor);
-    font-weight: 600;
-}
-
 .mobile-nav-menu a:last-child {
     border-bottom: none;
 }
@@ -2684,7 +2617,7 @@ input:checked+.cookie-slider:before {
 }
 
 .mobile-nav-menu a.active {
-    color: var(--primaryColor);
+    color: white;
     font-weight: 600;
 }
 
@@ -3230,7 +3163,7 @@ input:checked+.cookie-slider:before {
 }
 
 .mobile-nav-menu a.active {
-    color: var(--primaryColor);
+    color: white;
     font-weight: 600;
 }
 
@@ -5774,7 +5707,7 @@ input:checked+.cookie-slider:before {
     font-family: 'Overpass', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
-    color:var(--secondaryColor);
+    color: var(--secondaryColor);
     margin-bottom: 20px;
 }
 

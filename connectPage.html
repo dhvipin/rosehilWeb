@@ -647,8 +647,7 @@
                     <h3 data-i18n="footer.contactUs">Contact Us</h3>
                     <p><strong data-i18n="contact.address.name">Indovia</strong><br>
                         <span data-i18n="contact.address.division">A Division of</span> <a
-                            href="https://rosehill.group/" style="color: #ff6b35; text-decoration: underline;">Rosehill
-                            Group</a><br>
+                            href="https://rosehill.group/" style="color: black; text-decoration: underline;">Indovia</a><br>
                         <span data-i18n="contact.address.line1">Spring Bank Mills</span><br>
                         <span data-i18n="contact.address.line2">Sowerby Bridge</span><br>
                         <span data-i18n="contact.address.line3">West Yorkshire HX6 3BW</span><br>
@@ -720,38 +719,40 @@
 
             <div class="footer-bottom">
                 <p data-i18n="footer.copyright">© 2025 Indovia. A Division of <a href="https://rosehill.group/"
-                        style="color: #ff6b35; text-decoration: underline;">Indovia</a>. All rights reserved.</p>
+                        style="color: black; text-decoration: underline;">Indovia</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+   
     <script>
-        // Language switcher functionality
-        document.querySelectorAll('[data-language]').forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                const lang = this.getAttribute('data-language');
-                if (window.i18n) {
-                    window.i18n.changeLanguage(lang);
-                }
-            });
-        });
 
-        // Mobile menu toggle
+        // Mobile menu toggle functionality
         const mobileToggle = document.getElementById('mobile-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link (except dropdown toggles)
-        document.querySelectorAll('.mobile-nav-menu a:not(.mobile-dropdown-toggle)').forEach(link => {
-            link.addEventListener('click', function () {
-                mobileToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', function () {
+                mobileToggle.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
             });
-        });
+
+            // Close mobile menu when clicking on a link (except dropdown toggles)
+            document.querySelectorAll('.mobile-nav-menu a:not(.mobile-dropdown-toggle)').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!mobileToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        }
 
         // Mobile dropdown functionality
         const mobileDropdown = document.querySelector('.mobile-dropdown');
@@ -763,6 +764,12 @@
                 mobileDropdown.classList.toggle('active');
             });
         }
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
     </script>
 </body>
 
